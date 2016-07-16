@@ -6,6 +6,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.TextView;
 
+import java.util.List;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -32,6 +34,12 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(
                 getApplicationContext(), // 현재 화면의 제어권자
                 ImageActivity.class); // 다음 넘어갈 클래스 지정
+        startActivity(intent); // 다음 화면으로 넘어간다
+    }
+    public void onClickListViewButton(View view) {
+        Intent intent = new Intent(
+                getApplicationContext(), // 현재 화면의 제어권자
+                ListViewActivity.class); // 다음 넘어갈 클래스 지정
         startActivity(intent); // 다음 화면으로 넘어간다
     }
 

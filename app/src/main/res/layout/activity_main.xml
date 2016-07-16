@@ -70,7 +70,7 @@
         <Button
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:text="New Button"
+            android:text="ListView"
             android:id="@+id/button7"
             android:layout_alignParentBottom="true"
             android:layout_alignParentRight="true"
@@ -79,7 +79,8 @@
             android:background="@android:color/holo_blue_light"
             android:textColor="@android:color/white"
             android:textSize="24sp"
-            android:layout_margin="8dp" />
+            android:layout_margin="8dp"
+            android:onClick="onClickListViewButton"/>
 
     </LinearLayout>
 
